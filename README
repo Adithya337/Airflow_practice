@@ -1,1 +1,4 @@
-This new file aded via init
+This repo contains files that are created while learning airflow.
+
+This repo contains:
+dags which show Xcoms,PyhtonOperator,BashOperator,CatchUp,CornExp,TaskFlowApi,ConnectionWithPostgress

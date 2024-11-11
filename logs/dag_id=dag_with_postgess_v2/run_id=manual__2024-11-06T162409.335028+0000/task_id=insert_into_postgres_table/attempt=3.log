@@ -1,0 +1,25 @@
+[2024-11-06T16:34:21.266+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-06T16:34:21.315+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_postgess_v2.insert_into_postgres_table manual__2024-11-06T16:24:09.335028+00:00 [queued]>
+[2024-11-06T16:34:21.337+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_postgess_v2.insert_into_postgres_table manual__2024-11-06T16:24:09.335028+00:00 [queued]>
+[2024-11-06T16:34:21.338+0000] {taskinstance.py:2866} INFO - Starting attempt 3 of 6
+[2024-11-06T16:34:21.370+0000] {taskinstance.py:2889} INFO - Executing <Task(PostgresOperator): insert_into_postgres_table> on 2024-11-06 16:24:09.335028+00:00
+[2024-11-06T16:34:21.386+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=12431) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-11-06T16:34:21.385+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'dag_with_postgess_v2', 'insert_into_postgres_table', 'manual__2024-11-06T16:24:09.335028+00:00', '--job-id', '60', '--raw', '--subdir', 'DAGS_FOLDER/dag_with_postgress.py', '--cfg-path', '/tmp/tmpyspa1gaw']
+[2024-11-06T16:34:21.388+0000] {standard_task_runner.py:72} INFO - Started process 12437 to run task
+[2024-11-06T16:34:21.389+0000] {standard_task_runner.py:105} INFO - Job 60: Subtask insert_into_postgres_table
+[2024-11-06T16:34:21.416+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:209 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-06T16:34:21.484+0000] {task_command.py:467} INFO - Running <TaskInstance: dag_with_postgess_v2.insert_into_postgres_table manual__2024-11-06T16:24:09.335028+00:00 [running]> on host 61aa06b65713
+[2024-11-06T16:34:21.663+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Adithya' AIRFLOW_CTX_DAG_ID='dag_with_postgess_v2' AIRFLOW_CTX_TASK_ID='insert_into_postgres_table' AIRFLOW_CTX_EXECUTION_DATE='2024-11-06T16:24:09.335028+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-06T16:24:09.335028+00:00'
+[2024-11-06T16:34:21.665+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-06T16:34:21.699+0000] {sql.py:278} INFO - Executing: 
+insert into dag_runs(dt,dag_id) values ('2024-11-06','dag_with_postgess_v2')
+[2024-11-06T16:34:21.718+0000] {base.py:84} INFO - Retrieving connection 'postgres_localhost'
+[2024-11-06T16:34:21.738+0000] {base.py:84} INFO - Retrieving connection 'postgres_localhost'
+[2024-11-06T16:34:21.762+0000] {sql.py:544} INFO - Running statement: 
+insert into dag_runs(dt,dag_id) values ('2024-11-06','dag_with_postgess_v2'), parameters: None
+[2024-11-06T16:34:21.770+0000] {sql.py:553} INFO - Rows affected: 1
+[2024-11-06T16:34:21.796+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-06T16:34:21.797+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=dag_with_postgess_v2, task_id=insert_into_postgres_table, run_id=manual__2024-11-06T16:24:09.335028+00:00, execution_date=20241106T162409, start_date=20241106T163421, end_date=20241106T163421
+[2024-11-06T16:34:21.850+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-06T16:34:21.882+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-06T16:34:21.887+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

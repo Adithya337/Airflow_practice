@@ -1,0 +1,24 @@
+[2024-11-06T16:10:37.372+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-06T16:10:37.412+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_postgess_v1.create_postgress_table manual__2024-11-06T16:10:35.551839+00:00 [queued]>
+[2024-11-06T16:10:37.434+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_postgess_v1.create_postgress_table manual__2024-11-06T16:10:35.551839+00:00 [queued]>
+[2024-11-06T16:10:37.435+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 6
+[2024-11-06T16:10:37.468+0000] {taskinstance.py:2889} INFO - Executing <Task(PostgresOperator): create_postgress_table> on 2024-11-06 16:10:35.551839+00:00
+[2024-11-06T16:10:37.486+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=10241) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-11-06T16:10:37.488+0000] {standard_task_runner.py:72} INFO - Started process 10242 to run task
+[2024-11-06T16:10:37.486+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'dag_with_postgess_v1', 'create_postgress_table', 'manual__2024-11-06T16:10:35.551839+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/dag_with_postgress.py', '--cfg-path', '/tmp/tmpt4jgix1i']
+[2024-11-06T16:10:37.490+0000] {standard_task_runner.py:105} INFO - Job 6: Subtask create_postgress_table
+[2024-11-06T16:10:37.516+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:209 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-06T16:10:37.591+0000] {task_command.py:467} INFO - Running <TaskInstance: dag_with_postgess_v1.create_postgress_table manual__2024-11-06T16:10:35.551839+00:00 [running]> on host 61aa06b65713
+[2024-11-06T16:10:37.828+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Adithya' AIRFLOW_CTX_DAG_ID='dag_with_postgess_v1' AIRFLOW_CTX_TASK_ID='create_postgress_table' AIRFLOW_CTX_EXECUTION_DATE='2024-11-06T16:10:35.551839+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-06T16:10:35.551839+00:00'
+[2024-11-06T16:10:37.833+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-06T16:10:37.884+0000] {sql.py:278} INFO - Executing: 
+create table if not exists dag_runs(dt date,dag_id character varying,primary key(dt,dag_id))
+[2024-11-06T16:10:37.917+0000] {base.py:84} INFO - Retrieving connection 'postgres_localhost'
+[2024-11-06T16:10:37.945+0000] {base.py:84} INFO - Retrieving connection 'postgres_localhost'
+[2024-11-06T16:10:37.974+0000] {sql.py:544} INFO - Running statement: 
+create table if not exists dag_runs(dt date,dag_id character varying,primary key(dt,dag_id)), parameters: None
+[2024-11-06T16:10:38.123+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-06T16:10:38.124+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=dag_with_postgess_v1, task_id=create_postgress_table, run_id=manual__2024-11-06T16:10:35.551839+00:00, execution_date=20241106T161035, start_date=20241106T161037, end_date=20241106T161038
+[2024-11-06T16:10:38.193+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-06T16:10:38.225+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-06T16:10:38.229+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
