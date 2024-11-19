@@ -39,7 +39,8 @@
 version: '3'
 x-airflow-common: &airflow-common
   build: .
-  image: ${AIRFLOW_IMAGE_NAME:-extending_airflow1:latest}
+  # image: ${AIRFLOW_IMAGE_NAME:-extending_airflow1:latest}
+  image: airflowpractice:latest
   environment: &airflow-common-env
     AIRFLOW__CORE__EXECUTOR: LocalExecutor
     AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow

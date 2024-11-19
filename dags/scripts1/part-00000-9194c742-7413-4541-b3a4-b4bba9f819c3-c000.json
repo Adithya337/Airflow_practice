@@ -1,0 +1,9 @@
+{"customer_id":2,"customer_name":"vikash","address":"kolkata","date_of_joining":"12-03-2023","product_id":5,"quantity":3,"date_of_purchase":"01-06-2023"}
+{"customer_id":2,"customer_name":"vikash","address":"kolkata","date_of_joining":"12-03-2023","product_id":1,"quantity":12,"date_of_purchase":"15-06-2023"}
+{"customer_id":1,"customer_name":"manish","address":"patna","date_of_joining":"30-05-2022","product_id":56,"quantity":2,"date_of_purchase":"25-06-2023"}
+{"customer_id":5,"customer_name":"mahesh","address":"jaipur","date_of_joining":"22-03-2023","product_id":12,"quantity":5,"date_of_purchase":"15-04-2023"}
+{"customer_id":1,"customer_name":"manish","address":"patna","date_of_joining":"30-05-2022","product_id":22,"quantity":10,"date_of_purchase":"01-06-2022"}
+{"customer_id":1,"customer_name":"manish","address":"patna","date_of_joining":"30-05-2022","product_id":27,"quantity":5,"date_of_purchase":"03-02-2023"}
+{"customer_id":5,"customer_name":"mahesh","address":"jaipur","date_of_joining":"22-03-2023","product_id":22,"quantity":1,"date_of_purchase":"22-03-2023"}
+{"customer_id":7,"customer_name":"raman","address":"patna","date_of_joining":"30-12-2022","product_id":22,"quantity":4,"date_of_purchase":"03-02-2023"}
+{"customer_id":9,"customer_name":"ragini","address":"kolkata","date_of_joining":"03-03-2023","product_id":5,"quantity":6,"date_of_purchase":"03-03-2023"}
